@@ -1,0 +1,131 @@
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+div#container {
+    width: auto;
+    height: auto;
+    /* background-color: aqua; */
+    border: 2px solid black;
+}
+
+header {
+    width:inherit;
+    height: 80px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#foodlist {
+    width: 100%;
+    height: auto;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 30px 30px;
+    overflow: hidden;
+}
+
+.foodpic {
+    width: 225px;
+    height: 460px;
+    /* background-color: purple; */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.foodpic img {
+    width : 270px;
+    height: 330px;
+}
+
+#carousell {
+    width: inherit;
+    height: 80px;
+    /* background-color: sienna; */
+    margin: 0 auto;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    text-align: center;
+}
+
+button:hover {
+    box-shadow : 5px 5px 10px rgba(0,0,0,0.5);
+    background-color: grey;
+    cursor: pointer;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#carousell button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: white;
+}
+
+#chefpic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+button:hover {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    background-color: gray;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media screen and (min-width:700px) {
+    #foodlist {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .foodpic {
+        width: 23%;
+    }
+}
